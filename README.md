@@ -21,15 +21,15 @@ ASP.NET Core Web API backend skeleton for HR requests with configuration-driven 
 
 ## Configuration
 
-Set `DatabaseSettings.Provider` in `/tmp/workspace/celalb/hrportalapi/appsettings.json`:
+Set `DatabaseSettings.Provider` in `appsettings.json`:
 
 - `SqlServer` uses `DatabaseSettings.SqlServerConnectionString`
 - `Hana` uses `DatabaseSettings.HanaConnectionString` and registered provider invariant name (`Sap.Data.Hana` by default)
 
 ## Database DDL
 
-- SQL Server: `/tmp/workspace/celalb/hrportalapi/DatabaseScripts/sqlserver-requests.sql`
-- SAP HANA: `/tmp/workspace/celalb/hrportalapi/DatabaseScripts/hana-requests.sql`
+- SQL Server: `DatabaseScripts/sqlserver-requests.sql`
+- SAP HANA: `DatabaseScripts/hana-requests.sql`
 
 ## Run
 
