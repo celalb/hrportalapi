@@ -1,0 +1,22 @@
+@HrPortal.Api_HostAddress = http://localhost:5030
+@EmployeeId = E12345
+
+POST {{HrPortal.Api_HostAddress}}/api/leave-requests
+Accept: application/json
+Content-Type: application/json
+X-Employee-Id: {{EmployeeId}}
+
+{
+  "leaveType": "Annual",
+  "startDate": "2026-06-10",
+  "endDate": "2026-06-12",
+  "description": "Sample leave request"
+}
+
+###
+
+GET {{HrPortal.Api_HostAddress}}/api/requests/my
+Accept: application/json
+X-Employee-Id: {{EmployeeId}}
+
+###
